@@ -1,5 +1,5 @@
-# ENV - Environment for Reinforcement Learning
-ENV is an open source Python library for developing and comparing reinforcement learning algorithms by providing a standard API to communicate between learning algorithms and environments, as well as a standard set of environments compliant with that API
+# **vis** - Environment for Reinforcement Learning
+**vis** is an open source Python library for developing and comparing reinforcement learning algorithms by providing a standard API to communicate between learning algorithms and environments, as well as a standard set of environments compliant with that API
 
 ![Python package](https://github.com/ngoxuanphong/ENV/workflows/Python%20package/badge.svg) 
 <!-- ![Upload Python Package](https://github.com/ngoxuanphong/ENV/workflows/Upload%20Python%20Package/badge.svg) -->
@@ -8,7 +8,7 @@ ENV is an open source Python library for developing and comparing reinforcement 
 
 ##  Installation
 We are support Python 3.7, 3.8, 3.9, 3.10 on Linux and Windows
-To install the base ENV library, use:
+To install the base **vis** library, use:
 - Using pip:
     ```python
     Update later
@@ -43,7 +43,7 @@ env.numba_main_2(Agent, 1000, [0], 0)
 Please refer to [Wiki](https://github.com/ngoxuanphong/ENV/wiki/Using) for complete usage details
 
 ##  Environment
-ENV includes 20 games:
+**vis** includes 20 games:
 
 |Game        |Win-lv0       |win-lv1        |win-lv2        |Time-lv0       |Time-lv1       |Time-lv2       | Graphics      | Link|
 |:-----------|:-----------  |:-----------   |:-----------   |:-----------   |:-----------   |:-----------   |:-----------   |:-----------   |
