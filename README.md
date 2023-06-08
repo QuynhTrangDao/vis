@@ -1,5 +1,5 @@
 # **vis** - Environment for Reinforcement Learning
-**vis** is an open source Python library for developing and comparing reinforcement learning algorithms by providing a standard API to communicate between learning algorithms and environments, as well as a standard set of environments compliant with that API
+`vis` is a Python library that is open source and designed for the development and comparison of reinforcement learning algorithms. It offers a standardized API for seamless communication between learning algorithms and environments. Additionally, it provides a predefined collection of environments that adhere to this API, allowing for easy compatibility and evaluation of algorithms.
 
 ![Python package](https://github.com/ngoxuanphong/ENV/workflows/Python%20package/badge.svg) 
 <!-- ![Upload Python Package](https://github.com/ngoxuanphong/ENV/workflows/Upload%20Python%20Package/badge.svg) -->
