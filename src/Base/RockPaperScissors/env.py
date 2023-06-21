@@ -205,7 +205,7 @@ def n_games_numba(p0, num_game, per_player, list_other, per1, p1):
 import importlib.util, json, sys
 
 try:
-    from setup import SHORT_PATH
+    from env import SHORT_PATH
 except:
     pass
 
@@ -217,7 +217,7 @@ def load_module_player(player, game_name=None):
         )
     else:
         spec = importlib.util.spec_from_file_location(
-            "Agent_player", f"{SHORT_PATH}src/Agent/Ifelse/{game_name}/{player}.py"
+            "Agent_player", f"{SHORT_PATH}src/Agent/ifelse/{game_name}/{player}.py"
         )
     module = importlib.util.module_from_spec(spec)
     sys.modules[spec.name] = module
@@ -288,7 +288,13 @@ def load_agent(level, *args):
     return _list_bot_level_, _list_per_level_
 
 
-def numba_main_2(p0, num_game, per_player, level, *args):
+def run(
+    p0: any = bot_lv0,
+    num_game: int = 100,
+    per_player: np.ndarray = np.array([[0.0]]),
+    level: int = 0,
+    *args,
+):
     num_bot = getAgentSize() - 1
     list_other = np.array([-1] + [i + 1 for i in range(num_bot)])
     try:
