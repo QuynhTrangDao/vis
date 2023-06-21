@@ -22,3 +22,4 @@
         + 1: confirm the information of the game turn
     * [5]: winner ( -1: no winner, 0, 1)
     * [6]: 1 is the game over, if not, it's not
+

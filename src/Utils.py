@@ -1,3 +1,11 @@
+game_name = "Splendor"
+time_run_game = 100
+N_AGENT = 5
+N_GAME = 15
+PASS_LEVEL = 2500
+COUNT_TRAIN = 10000
+COUNT_TEST = 1000
+
 #  path = "C:\AutomaticTrain\State.xlsx"
 #  SHOT_PATH = 'A:/AutoTrain/GAME/'
 DRIVE_FOLDER = "G:/My Drive/AutomaticColab/"
@@ -17,7 +25,7 @@ def load_module_player(player, game_name=None):
         )
     else:
         spec = importlib.util.spec_from_file_location(
-            "Agent_player", f"{SHORT_PATH}src/Agent/Ifelse/{game_name}/{player}.py"
+            "Agent_player", f"{SHORT_PATH}src/Agent/ifelse/{game_name}/{player}.py"
         )
     module = importlib.util.module_from_spec(spec)
     sys.modules[spec.name] = module
